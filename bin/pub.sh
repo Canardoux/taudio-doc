@@ -40,6 +40,11 @@ if [ $? -ne 0 ]; then
 fi
 
 
+#dart doc .
+#cd ../taudio-doc
+#bin/pub.sh
+#cd ../taudio
+
 #cp -a ../flutter_sound/doc/api tau/fs
 #cp -a ../taudio/doc/api tau/taudio
 #cp -a ../etau/doc/api tau/etau

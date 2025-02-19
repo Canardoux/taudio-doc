@@ -51,10 +51,18 @@ mermaid:
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
-  "Toto":
-    - "/tau/api/player/FlutterSoundPlayer-class.html"
+  "Live Examples":
+    - "/live/index.html"
+  "Changelog":
+    - "/tau/CHANGELOG.html"
+  "Repo":
+    - "https://github.com/canardoux/etau/"
+  "pub.dev":
+    - "https://pub.dev/packages/etau/"
+  "Etau":
+    - "https://etau.canardoux.xyz/"
+  "Flutter Sound":
+    - "https://flutter-sound.canardoux.xyz/"
 
 # External navigation links
 nav_external_links:

@@ -1,9 +1,3 @@
----
-title: Taudio - 0.17.9
-summary: The Taudio Project README.
-layout: home
-nav_order: 1
----
 ## Documentation
 
 ![pub version](https://img.shields.io/pub/v/flutter_sound.svg?style=flat-square)

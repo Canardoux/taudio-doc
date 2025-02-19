@@ -1,5 +1,5 @@
 ---
-title: Taudio - 1.2.3
+title: Taudio - 0.1.2
 summary: The Taudio Project README.
 layout: home
 nav_order: 1

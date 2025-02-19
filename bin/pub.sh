@@ -6,11 +6,7 @@
 rm -rf _site
 #cp ../flutter_sound/README.md pages/fs
 
-
-cp index.md README
-gsed -i '1,6d' README
-
-
+bin/cp.sh
 
 #rm -rf tau/fs/* tau/etau/* tau/taudio/*
 #cp -r ../etau/example/build/web tau/etau/live

@@ -4,7 +4,7 @@
 
 
 rm -rf live
-cp -r ../flutter_sound/example/build/web live
+cp -r ../taudio/example/build/web live
 if [ $? -ne 0 ]; then
     echo "Error"
     exit -1

@@ -56,9 +56,9 @@ aux_links:
   "Changelog":
     - "/tau/CHANGELOG.html"
   "Repo":
-    - "https://github.com/canardoux/etau/"
+    - "https://github.com/canardoux/taudio/"
   "pub.dev":
-    - "https://pub.dev/packages/etau/"
+    - "https://pub.dev/packages/taudio/"
   "Etau":
     - "https://etau.canardoux.xyz/"
   "Flutter Sound":

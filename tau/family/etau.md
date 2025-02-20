@@ -4,18 +4,19 @@ parent: "The τ family"
 nav_order: 2
 ---
 ![pub version](https://img.shields.io/pub/v/etau.svg?style=flat-square)
+![Etau](https://etau.canardoux.xyz/images/EtauBanner.png)
 
 ## Documentation
 
-- ## Etau user : your doc [is here](https://etau.vercel.app/)
-- ## The CHANGELOG [is here](https://etau.vercel.app/tau/CHANGELOG.html)
+- ## Etau user : your doc [is here](https://etau.canardoux.xyz/)
+- ## The CHANGELOG [is here](https://etau.canardoux.xyz/tau/CHANGELOG.html)
 
 ## Etau stands for Ukraine!
 
-![PeaceForUkraine](https://tau-ver.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+![PeaceForUkraine](https://etau.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
 Peace for Ukraine
 
-![PrayForUkraine](https://tau-ver.canardoux.xyz/images/banner.png)
+![PrayForUkraine](https://etau.canardoux.xyz/images/banner.png)
 Pray for Ukraine
 
 ## Overview
@@ -66,7 +67,7 @@ It alway access `Etau` which is the interface. This allows the App to have a uni
 - [Simple basic examples](https://github.com/Canardoux/etau/tree/main/example/lib/BasicEx) showing how to use `Etau`
 - A port of all the [Mozilla examples](https://github.com/Canardoux/etau/tree/main/example/lib/MozillaEx), using Dart instead of JS ofcourse. These Mozilla examples are also very simple, and can be looked at instead of our basic examples.
 
-You can run a live view of these examples [here](https://tau-ver.canardoux.xyz/tau/etau/live/index.html).
+You can run a live view of these examples [here](https://etau.canardoux.xyz/tau/etau/live/index.html).
 
 ## License
 
@@ -89,9 +90,7 @@ Actually this is only a place holder.
 
 ## We need help
 
-{% include important.html content="
 We greatly appreciate any contributions to the project which can be as simple as providing feedback on the API or documentation.
-"%}
 
 Actually, I am almost alone to maintain and develop three important projects :
 - Flutter Sound 9.x
@@ -102,7 +101,4 @@ This is too much work on my shoulders. We desesperatly need at least one other d
 
 ## Thanks
 
-{% include note.html content="
-### If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/etau).
-This is free and this will reassure me that **I do not spend most of my life for nobody**.
-"%}
+### If you like my work, you can click on the `Thumb up` button of the top of the [pub.dev page](https://pub.dev/packages/etau) This is free and this will reassure me that **I do not spend most of my life for nobody**.

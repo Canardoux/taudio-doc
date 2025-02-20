@@ -3,6 +3,9 @@ title: Tauwar
 parent: "The τ family"
 nav_order: 4
 ---
+![pub version](https://img.shields.io/pub/v/tauwar.svg?style=flat-square)
+![Etau](https://tauwar.canardoux.xyz/images/TauwarBanner.png)
+
 <!--
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
@@ -16,6 +19,17 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
+- ## Etau user : your doc [is here](https://etau.canardoux.xyz/)
+
+## Etau stands for Ukraine!
+
+![PeaceForUkraine](https://etau.canardoux.xyz/images/2-year-old-irish-girl-ukrainian.jpg)
+Peace for Ukraine
+
+![PrayForUkraine](https://etau.canardoux.xyz/images/banner.png)
+Pray for Ukraine
+
+
 # Tauwar
 
 `Tauwar` is an [Etau](https://pub.dev/packages/etau) implementation for Flutter on mobiles.
@@ -24,7 +38,7 @@ and the Flutter guide for
 So, there are not many things to say about `Tauwar` because this is just an implementation.
 The only verb used by the App is `tau()`, which gives the implementation.
 
-You can see all the [Etau project documentation](https://tau.canardoux.xyz/etau-README.html) here.
+You can see all the [Etau project documentation](https://etau.canardoux.xyz/) here.
 
 Example
 ```dart
@@ -52,7 +66,7 @@ import 'package:tau_war/tau_war.dart';
 
 ```
 
-if your App needs to support at the same time Fliutter Web And Flutter on mobiles:
+if your App needs to support at the same time Flutter Web And Flutter on mobiles:
 ```dart
 import 'package:etau/etau.dart';
 import 'package:etau/dummy.dart'

@@ -3,24 +3,6 @@ title: Tauweb
 parent: "The τ family"
 nav_order: 3
 ---
-```dart
-import 'package:etau/etau.dart';
-import 'package:tau_web/tau_web.dart';
-
-  @override
-  void initState() 
-  {
-        super.initState();
-        tau().init().then 
-        ((e){
-                audioCtx = tau().newAudioContext();
-        });
-  }
-
-  ...
-        // Then all the code depends only on the interface (`etau`)
-        dest = audioCtx.destination;
-        source = audioCtx.createBufferSource();
         source!.buffer = audioBuffer;
         pannerNode = audioCtx.createStereoPanner();
         pannerNode!.pan.value = pannerValue;

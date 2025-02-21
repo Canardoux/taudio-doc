@@ -68,16 +68,16 @@ aux_links:
 nav_external_links:
 
   - title: Live Example
-    url: /live/index.html
+    url: https://taudio.canardoux.xyz/live/index.html
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 
   - title: Repository
-    url: https://github.com/canardoux/flutter_sound
+    url: https://github.com/canardoux/taudio
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
   - title: pub.dev
-    url: https://pub.dev/packages/flutter_sound
+    url: https://pub.dev/packages/taudio
     hide_icon: false # set to true to hide the external link icon - defaults to false
     opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 

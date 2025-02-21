@@ -6,9 +6,9 @@ nav_order: 3
 
 This code does not pretend to show how to code! The purpose of those examples is just to show how to use the Flutter Sound API.
 
-You can have a live run of those examples [here](/tau/fs/live/index.html).
+You can have a live run of those examples [here](/live/index.html).
 
 The example itself is architectured as a driver coded in dart (which is not interesting at all)
 and a list of Dart Screens. 
 
-The examples code source are found [here](https://github.com/Canardoux/flutter_sound/tree/master/example/lib).
+The examples code source are found [here](https://github.com/Canardoux/taudio/tree/master/example/lib).

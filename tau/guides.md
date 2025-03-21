@@ -3,5 +3,6 @@ title: "Guides"
 description: TODO
 nav_order: 2
 ---  
+# Guides
 
-# TODO
+Several notes to help new users

@@ -3,6 +3,11 @@ title: Tauwar
 parent: "The τ family"
 nav_order: 4
 ---
+---
+title: Tauwar
+parent: "The τ family"
+nav_order: 4
+---
 ![pub version](https://img.shields.io/pub/v/tauwar.svg?style=flat-square)
 ![Etau](https://tauwar.canardoux.xyz/images/TauwarBanner.png)
 

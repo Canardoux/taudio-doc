@@ -17,11 +17,20 @@ bin/cp.sh
 #    exit -1
 #fi
 
+
+cd ../taudio
+dart doc .
+cd ../taudio-doc
+
+
 echo "Running api.sh"
 bin/api.sh
 
 echo "Running live"
 bin/live.sh
+rm api/index.html
+cp -v tau/api.md.ref api/index.md
+
 
 echo 'config set --local path ~/vendor/bundle'
 bundle config set --local path '~/vendor/bundle'
@@ -59,7 +68,7 @@ git pull
 git push
 
 echo -n 'Upload to canardoux.xyz ...'
-scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/fsdoc > /dev/null
+scp -r _site/* canardoux@danku:/var/www/canardoux.xyz/tau/taudio-doc > /dev/null
 echo ''
 echo 'OK man'
 

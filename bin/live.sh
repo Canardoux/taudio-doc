@@ -2,6 +2,10 @@
 
 
 
+cd ../taudio/example
+flutter build web --release
+cd ../../taudio-doc
+
 
 rm -rf live
 cp -r ../taudio/example/build/web live

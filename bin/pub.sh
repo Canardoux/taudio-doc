@@ -28,8 +28,6 @@ bin/api.sh
 
 echo "Running live"
 bin/live.sh
-rm api/index.html
-cp -v tau/api.md.ref api/index.md
 
 
 echo 'config set --local path ~/vendor/bundle'

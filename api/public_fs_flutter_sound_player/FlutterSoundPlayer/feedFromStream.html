@@ -100,9 +100,9 @@ Future&lt;void&gt; feedFromStream(Uint8List buffer) async {
   var totalLength = buffer.length;
   while (totalLength &gt; 0 &amp;&amp; !isStopped) {
     var bsize = totalLength &gt; _bufferSize ? _bufferSize : totalLength;
-    _waitForFood = true;
+    &#47;&#47;_waitForFood = true;
     var ln = await _feed(buffer.sublist(lnData, lnData + bsize));
-    _waitForFood = false;
+    &#47;&#47;_waitForFood = false;
     assert(ln &gt;= 0);
     lnData += ln;
     totalLength -= ln;
@@ -135,7 +135,7 @@ Future&lt;void&gt; feedFromStream(Uint8List buffer) async {
 <footer>
   <span class="no-break">
     taudio
-      0.17.19
+      10.0.0
   </span>
   
 </footer>

@@ -10,7 +10,7 @@ cp ../taudio/README.md README.md
 ed index.md  >/dev/null << END
 1i
 ---
-title: Taudio - 0.17.19
+title: Taudio - 10.0.0
 summary: The Taudio Project README.
 layout: home
 nav_order: 1
@@ -64,7 +64,7 @@ q
 END
 
 
-cp -v ../tauweb/README.md  tau/family/tauweb.md
+cp -v ../tau_web/README.md  tau/family/tauweb.md
 ed tau/family/tauweb.md  >/dev/null << END
 1i
 ---
@@ -78,7 +78,7 @@ q
 END
 
 
-cp -v ../tauwar/README.md  tau/family/tauwar.md
+cp -v ../tau_war/README.md  tau/family/tauwar.md
 ed tau/family/tauwar.md  >/dev/null << END
 1i
 ---

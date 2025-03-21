@@ -64,11 +64,11 @@ q
 END
 
 
-cp -v ../tau_web/README.md  tau/family/tauweb.md
-ed tau/family/tauweb.md  >/dev/null << END
+cp -v ../tau_web/README.md  tau/family/tau_web.md
+ed tau/family/tau_web.md  >/dev/null << END
 1i
 ---
-title: Tauweb
+title: Tau_web
 parent: "The τ family"
 nav_order: 3
 ---
@@ -78,11 +78,11 @@ q
 END
 
 
-cp -v ../tau_war/README.md  tau/family/tauwar.md
-ed tau/family/tauwar.md  >/dev/null << END
+cp -v ../tau_war/README.md  tau/family/tau_war.md
+ed tau/family/tau_war.md  >/dev/null << END
 1i
 ---
-title: Tauwar
+title: Tau_war
 parent: "The τ family"
 nav_order: 4
 ---

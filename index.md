@@ -1,5 +1,5 @@
 ---
-title: Taudio - 10.0.0
+title: Taudio - 10.1.0
 summary: The Taudio Project README.
 layout: home
 nav_order: 1
@@ -18,7 +18,7 @@ nav_order: 1
 - A wrapper above [Etau](https://pub.dev/packages/etau).
 - [Flutter Sound v10.0](https://pub.dev/packages/flutter_sound).
 
-Taudio` is (will be) a complete rewrite of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but will add a new wrapper above [Etau](https://pub.dev/packages/etau).
+`Taudio` is (will be) a complete rewrite of Flutter Sound 9.x. It keeps compatibility with the Flutter Sound 9.x API but will add a new wrapper above [Etau](https://pub.dev/packages/etau).
 
 Taudio is actually in a developement state. There are many things to do before you can benefit of it. Specially:
 - A documentation (TODO)

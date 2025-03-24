@@ -85,6 +85,21 @@ If your App needs to play remote files you possibly must add :
 
 From version 9.x, the app does not need anymore to include the Flutter Sound library in its 'index.html'.
 
+### WASM support
+
+`Taudio` is fully supported by WASM. 
+
+To run under WASM :
+```sh
+flutter run -d chrome --wasm
+```
+
+to build for WASM:
+```sh
+ flutter build web --wasm
+ ```
+
+
 ## Troubles shooting
 
 ### Problem with Cocoapods

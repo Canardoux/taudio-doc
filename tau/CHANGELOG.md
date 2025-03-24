@@ -4,6 +4,10 @@ summary: The Changelog of the Taudio Project.
 nav_order: 8
 toc: false
 ---
+### 10.1.1
+
+- Web : Fix a bug in JS types, during `RecordToStream`. Now WASM is completely functional. Everything work perfectely :-)
+
 ### 10.1.0
 
 - Web : the scripts are now loaded during `open()`. We will not anymore have problems with scripts not loaded in time.

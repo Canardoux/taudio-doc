@@ -10,7 +10,7 @@ cp ../taudio/README.md README.md
 ed index.md  >/dev/null << END
 1i
 ---
-title: Taudio - 10.1.0
+title: Taudio - 10.1.1
 summary: The Taudio Project README.
 layout: home
 nav_order: 1

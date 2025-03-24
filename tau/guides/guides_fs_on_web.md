@@ -66,3 +66,17 @@ After adding this parameter, it is now possible to do :
 
 
 This will play correctly the remote AAC file.
+
+## WASM support
+
+`Taudio` is fully supported by WASM. 
+
+To run under WASM :
+```sh
+flutter run -d chrome --wasm
+```
+
+to build for WASM:
+```sh
+ flutter build web --wasm
+ ```

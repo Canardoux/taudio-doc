@@ -29,7 +29,7 @@
     <li><a href="../../index.html">taudio</a></li>
     <li><a href="../../public_fs_flutter_sound_player">public&#47;fs&#47;flutter_sound_player.dart</a></li>
     <li><a href="../../public_fs_flutter_sound_player/FlutterSoundPlayer-class.html">FlutterSoundPlayer</a></li>
-    <li class="self-crumb"><span class="deprecated">startPlayerFromMic</span> method</li>
+    <li class="self-crumb">startPlayerFromMic method</li>
   </ol>
   <div class="self-name">startPlayerFromMic</div>
   <form class="search navbar-right" role="search">
@@ -59,13 +59,8 @@
 
     <section class="multi-line-signature">
       
-  <div>
-    <ol class="annotation-list">
-        <li>@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;This function can very easily be emulated with a RecordToStream + a PlayFromStream&#39;)</li>
-    </ol>
-  </div>
 <span class="returntype"><a href="https://api.flutter.dev/flutter/dart-core/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
-<span class="name deprecated">startPlayerFromMic</span>(<wbr>{<ol class="parameter-list"> <li><span class="parameter" id="startPlayerFromMic-param-sampleRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">sampleRate</span> = <span class="default-value">44000</span>, </span></li>
+<span class="name ">startPlayerFromMic</span>(<wbr>{<ol class="parameter-list"> <li><span class="parameter" id="startPlayerFromMic-param-sampleRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">sampleRate</span> = <span class="default-value">48000</span>, </span></li>
 <li><span class="parameter" id="startPlayerFromMic-param-numChannels"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">numChannels</span> = <span class="default-value">1</span>, </span></li>
 <li><span class="parameter" id="startPlayerFromMic-param-bufferSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bufferSize</span> = <span class="default-value">8192</span>, </span></li>
 <li><span class="parameter" id="startPlayerFromMic-param-enableVoiceProcessing"><span class="type-annotation">dynamic</span> <span class="parameter-name">enableVoiceProcessing</span> = <span class="default-value">false</span>, </span></li>
@@ -82,13 +77,12 @@ There is no processing between the Microphone and the Speaker.
 If you want to process the data before playing them, actually you must define a loop between a <a href="../../public_fs_flutter_sound_player/FlutterSoundPlayer-class.html">FlutterSoundPlayer</a> and a <a href="../../public_fs_flutter_sound_recorder/FlutterSoundRecorder-class.html">FlutterSoundRecorder</a>.
 (Please, look to <a href="http://www.canardoux.xyz/flutter_sound/doc/pages/flutter-sound/api/topics/flutter_sound_examples_stream_loop.html">this example</a>).</p>
 <p>Later, we will implement the <em>Tau Audio Graph</em> concept, which will be a more general object.</p>
+<p>startPlayerFromMic() has four optional parameters :</p>
 <ul>
-<li><code>startPlayerFromMic()</code> has two optional parameters :
-<ul>
-<li><code>sampleRate:</code> the Sample Rate used. Optional. Only used on Android. The default value is probably a good choice and the App can ommit this optional parameter.</li>
-<li><code>numChannels:</code> 1 for monophony, 2 for stereophony. Optional. Actually only monophony is implemented.</li>
-</ul>
-</li>
+<li><strong><em>sampleRate:</em></strong> the Sample Rate used. Optional. Only used on Android. The default value is probably a good choice and the App can ommit this optional parameter.</li>
+<li><strong><em>numChannels:</em></strong> 1 for monophony, 2 for stereophony. Optional. Actually only monophony is implemented.</li>
+<li><strong><em>bufferSize:</em></strong> the size of the internal buffers. Probably the default choice is OK</li>
+<li><strong><em>enableVoiceProcessing:</em></strong> is a flag that you can enable</li>
 </ul>
 <p><code>startPlayerFromMic()</code> returns a Future, which is completed when the Player is really started.</p>
 <p><em>Example:</em></p>
@@ -96,17 +90,15 @@ If you want to process the data before playing them, actually you must define a 
     ...
     myPlayer.stopPlayer();
 </code></pre>
+<p>'This function can very easily be emulated with a RecordToStream + a PlayFromStream',</p>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">@Deprecated(
-  &#39;This function can very easily be emulated with a RecordToStream + a PlayFromStream&#39;,
-)
-Future&lt;void&gt; startPlayerFromMic({
-  int sampleRate = 44000, &#47;&#47; The default value is probably a good choice.
+  <pre class="language-dart"><code class="language-dart">Future&lt;void&gt; startPlayerFromMic({
+  int sampleRate = 48000, &#47;&#47; The default value is probably a good choice.
   int numChannels =
       1, &#47;&#47; 1 for monophony, 2 for stereophony (actually only monophony is supported).
   int bufferSize = 8192,
@@ -136,7 +128,7 @@ Future&lt;void&gt; startPlayerFromMic({
     <li><a href="../../index.html">taudio</a></li>
     <li><a href="../../public_fs_flutter_sound_player">flutter_sound_player</a></li>
     <li><a href="../../public_fs_flutter_sound_player/FlutterSoundPlayer-class.html">FlutterSoundPlayer</a></li>
-    <li class="self-crumb"><span class="deprecated">startPlayerFromMic</span> method</li>
+    <li class="self-crumb">startPlayerFromMic method</li>
 </ol>
 
     <h5>FlutterSoundPlayer class</h5>
@@ -148,7 +140,7 @@ Future&lt;void&gt; startPlayerFromMic({
 <footer>
   <span class="no-break">
     taudio
-      10.1.1
+      10.2.0
   </span>
   
 </footer>

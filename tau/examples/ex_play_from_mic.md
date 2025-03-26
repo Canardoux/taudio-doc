@@ -11,4 +11,4 @@ The example source [is there](https://github.com/canardoux/flutter_sound/blob/ma
 This is a very simple example, that shows how to loop from a recorder to a player.
 It open a `Recorder to Stream` and plug the ouput of this recorder to a `Player from Stream`.
 
-![screen shot](ScreenShots/SimpleRecorder.png)
+![screen shot](ScreenShots/play_from_mic.png)

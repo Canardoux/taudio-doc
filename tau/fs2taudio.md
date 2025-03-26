@@ -56,4 +56,4 @@ The [Taudio](https://taudio.canardoux.xyz/) repo is now [Github Taudio](https://
 Please fill your [Taudio](https://taudio.canardoux.xyz/) issues there.
 ## That's it !
 
-Hopefully, your App continue to work as before.
+Hopefully, your App continues to work as before.

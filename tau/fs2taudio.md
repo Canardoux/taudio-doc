@@ -34,7 +34,7 @@ Because you are perhaps a professional developer. I am a professional developer.
 
 ```yaml
 dependencies:
-  taudio: ^1.0.0
+  taudio: ^10.0.0
   ```
 
 ## 3. Modify your Dart import statement

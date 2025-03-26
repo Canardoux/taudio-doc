@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "f01880d1009576b4401cb0d7acdb17c7",
+const RESOURCES = {"flutter_bootstrap.js": "4658724333f1e2e0647d99cb82f52c8f",
 "version.json": "b1f3f9c1f3f2212c79c7a0a43ed9aea6",
 "index.html": "75fad508277b0ad0be20d6c0fe376d8d",
 "/": "75fad508277b0ad0be20d6c0fe376d8d",
@@ -14,7 +14,7 @@ const RESOURCES = {"flutter_bootstrap.js": "f01880d1009576b4401cb0d7acdb17c7",
 "js/howler/howler.spatial.min.js": "28305f7b4898c9b49d523b2e80293ec8",
 "js/howler/howler.min.js": "0245b64fba989b9e3fd5b253f683d0e4",
 "js/howler/howler.core.min.js": "55e0af0319483be8a7371a2cceacf921",
-"main.dart.js": "ea5c2f26745e41d33c91dcf775ed59ab",
+"main.dart.js": "7c5301c744899073c03ec46eb3f111b0",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
 "favicon.png": "679ba5c106339248760c6d66796ba3c8",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",

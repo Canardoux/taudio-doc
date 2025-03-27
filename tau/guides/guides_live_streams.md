@@ -13,12 +13,9 @@ Streams support on Flutter Sound is a very exciting feature. You can do two thin
 - Play from Stream allows you to play on your device things that are computed in dart (generator, sequencer, distorder, ...)
 or things that come from a remote server,
 
-{: .warning }
+{: .note }
 > Dart Streams support is actually being developped. Some Features are not completely supported:
->
-> - On iOS things are completely finished. Everything is supposed to work
 > - On Android non interleaved mode and Float32 are not fully implemented
-> - On Web, things are completely finished. Everything is supposed to work
 
 
 ### Interleaving
@@ -35,7 +32,7 @@ This are the Raw Data where each sample are coded with 2 or 4 unsigned bytes for
 
 Non interleaved data are coded as `<List<Float32List>>` or `<List<Int16List>>` depending of the codec selected. The number of the element of the List is equal to the number of channels (1 for monophony, 2 for stereophony). This is convenient when you want to access the real audio data as Float32 or Int16. 
 
-{: .note}
+{: .hint}
 You can specify `toStreamFloat32` or `toStreamInt16:` even when you have just one channel. In this case the length of the list is 1.
 
 ### Coding
@@ -85,10 +82,17 @@ The parameters used for the verb [startRecorder()](/api/public_flutter_sound_rec
 
 - **bufferSize:** is a not very interesting parameter and is for expert only. With this parameter you can specify the size of the internal buffers used by flutter Sound. I sugggest that you do not play with this parameter and keep its default value which is actually 8192. (This default value is probably too high, and I will try to downgrade it in the future),
 
+- **enableNoiseSuppression:** is a boolean that you can set if you want to enable the _noise suppression_ feature
+
+- **enableEchoCancellation:** is a boolean that you can set if you want to enable the _echo cancellation_ feature
+
 - **enableVoiceProcessing:** I cannot say anything about this parameter because I don't know what it is for.
 
-{: .important}
-It is really important that you specify correctly the Codec parameter, the sampleRate, the numChannels parameter and your stream.
+{: .note}
+_enableNoiseSuppression_ and _enableEchoCancellation_ are actually only implemented on Android
+
+{: .note}
+It is really important that you specify correctly the _Codec_ parameter, the _sampleRate_, the _numChannels_ parameter and your stream.
 If you don't, you will get bad results.
 
 ### Listen to your Stream

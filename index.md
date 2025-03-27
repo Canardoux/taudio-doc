@@ -90,7 +90,7 @@ The W3C recommandation is powerful but simple to use. There are probably no many
 
 ### But what is this famous GPL License ?
 
-You can read all the legally lines if you want. But there are two main things that is important to understand :
+You can read all the [legally lines](http://localhost:4000/tau/LICENSE.html) if you want. But there are two main things that is important to understand :
 
 - If your App is dependant of `Taudio`, you must publish the sources of your software somewhere. Probably on internet.
 
@@ -98,7 +98,7 @@ You can read all the legally lines if you want. But there are two main things th
 
 ### Why is this License so good ?
 
-Because you are perhaps a professional developer. I am a professional developer. If someone like me works freely for some companies it would not be fair for you. Why will your boss pay you, if other people works for free for them? Companies may use GPL software. But they have to give something in exchange.
+Because you are perhaps a professional developer. I am a professional developer. If someone like me works freely for some companies it would not be fair for you. Why will your boss pay you, if other people work for free for them? Companies may use GPL software. But they have to give something in exchange.
 
 ## Taudio stands with Ukraine
 

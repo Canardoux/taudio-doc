@@ -4,7 +4,7 @@ summary: The Changelog of the Taudio Project.
 nav_order: 8
 toc: false
 ---
-### 10.2.3
+### 10.2.4
 
 - The flag 'scriptLoaded' was set too early in FlutterSoundWeb. [(fs #1175)](https://github.com/Canardoux/flutter_sound/issues/1175)
 

@@ -21654,8 +21654,7 @@ mq(){var s=0,r=A.m(t.y),q
 var $async$mq=A.n(function(a,b){if(a===1)return A.j(b,r)
 while(true)switch(s){case 0:s=!$.apv?3:4
 break
-case 3:$.apv=!0
-s=5
+case 3:s=5
 return A.h(A.v8("./assets/packages/flutter_sound_web/howler/howler.js"),$async$mq)
 case 5:s=6
 return A.h(A.v8("./assets/packages/flutter_sound_web/src/flutter_sound.js"),$async$mq)
@@ -21663,7 +21662,7 @@ case 6:s=7
 return A.h(A.v8("./assets/packages/flutter_sound_web/src/flutter_sound_player.js"),$async$mq)
 case 7:s=8
 return A.h(A.v8("./assets/packages/flutter_sound_web/src/flutter_sound_recorder.js"),$async$mq)
-case 8:case 4:q=!0
+case 8:case 4:q=$.apv=!0
 s=1
 break
 case 1:return A.k(q,r)}})

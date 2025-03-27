@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "5fbbeaec941f50f6f667a931d3f0ed14",
-"version.json": "00185734e6843cd4b0f6a443885ae19d",
+const RESOURCES = {"flutter_bootstrap.js": "40f68ee5cf5d91c0829faa329c320791",
+"version.json": "afabba76e97c347193f7b980a1593aa2",
 "index.html": "75fad508277b0ad0be20d6c0fe376d8d",
 "/": "75fad508277b0ad0be20d6c0fe376d8d",
 "js/flutter_sound/flutter_sound_recorder.js": "b37654208f2ab2461a0f66424a20335a",
@@ -14,7 +14,7 @@ const RESOURCES = {"flutter_bootstrap.js": "5fbbeaec941f50f6f667a931d3f0ed14",
 "js/howler/howler.spatial.min.js": "28305f7b4898c9b49d523b2e80293ec8",
 "js/howler/howler.min.js": "0245b64fba989b9e3fd5b253f683d0e4",
 "js/howler/howler.core.min.js": "55e0af0319483be8a7371a2cceacf921",
-"main.dart.js": "fc37c03646e1a979ceb35316b3be3d7c",
+"main.dart.js": "122db5fbf73b6703923bbb91630a6152",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
 "favicon.png": "679ba5c106339248760c6d66796ba3c8",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",

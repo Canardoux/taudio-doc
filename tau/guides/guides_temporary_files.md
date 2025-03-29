@@ -8,7 +8,7 @@ nav_order: 8
 
 ## Using path_provider
 
-The App can get the temporary directory with the plugin [path_provider](https://pub.dev/packages/path_provider) and use it for [startRecorder()](/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) parameter :
+The App can get the temporary directory with the plugin [path_provider](https://pub.dev/packages/path_provider) and use it for [startRecorder()](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) parameter :
 
 ```dart
         var tempDir = await getTemporaryDirectory();
@@ -28,7 +28,7 @@ Temporary files are emulated by Flutter Sound on Flutter Web, using `Blob` objec
 ## Using a temporary file name
 
 If the App does not specify a full path to the startRecorder parameter (without any '/'),
-the [startRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) argument is considered as a temporary file name.
+the [startRecorder()](/tau/fs/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) argument is considered as a temporary file name.
 
 ```dart
         await myRecorder.startRecorder( toFile: 'foo.aac', codec: Codec.aacADTS ); // Without any slash '/'.
@@ -37,7 +37,7 @@ the [startRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundReco
         await myPlayer.startPlayer( fromURI: 'foo.aac', codec: Codec.aacADTS );
 ```
 
-[stopRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundRecorder/stopRecorder.html) returns a Future to the URL of the temporary file created if the App needs it.
+[stopRecorder()](/tau/fs/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/stopRecorder.html) returns a Future to the URL of the temporary file created if the App needs it.
 
 ```dart
         await myRecorder.startRecorder( toFile: 'foo.aac', codec: Codec.aacADTS ); // Without any slash '/'.
@@ -46,7 +46,7 @@ the [startRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundReco
         await myPlayer.startPlayer( fromURI: url, codec: Codec.aacADTS );
 ```
 
-All the temporary files created are automaticaly deleted when the App does a [closeRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundRecorder/closeRecorder.html)].
+All the temporary files created are automaticaly deleted when the App does a [closeRecorder()](/tau/fs/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/closeRecorder.html)].
 
 This works on :
 - Android

@@ -43,7 +43,7 @@ FlutterSoundRecorder myRecorder = FlutterSoundRecorder(logLevel: Level.debug);
 Note : it is verry, very important to post your log messages when you fill an issue in github. I cannot do anything for you without the logs.
 
 You probably do not need, but if exceptionaly you want to dynamicaly change the Log Level after the module instanciation, 
-you can use the [setLogLevel()](/api/public_flutter_sound_player/FlutterSoundPlayer/setLogLevel.html) verb :
+you can use the [setLogLevel()](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/setLogLevel.html) verb :
 
 ```dart
         myPlayer.setLogLevel(Level.debug);

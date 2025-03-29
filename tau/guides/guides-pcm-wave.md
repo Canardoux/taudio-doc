@@ -39,20 +39,20 @@ Flutter Sound supports two PCM file formats :
 A Wave file is a WAVE header + RAW PCM data. When you want to play a WAVE file, all the PCM attributs can be found in the header. You don't have to specify those parameters when you want to play such a file. The Wave audio file format has a terrible drawback : it cannot be streamed. The Wave file is considered not valid, until it is closed. During the construction of the Wave file, it is considered as corrupted because the Wave header is still not written.
 
 Raw PCM is not really an audio format. Raw PCM files store the raw data **without** any envelope. This means that when you want to play RAW PCM files, you must specified all the PCM attributs (Sample Rate, coding, number of channels, ...).
-A simple way for playing a RAW PCM file, is to add a `Wave` header in front of the data before playing it. To do that, the helper verb [pcmToWave()](/api/public_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) is convenient. You can also call directely the [startPlayer()](/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayer.html) verb. If you do that, do not forget to provide the `sampleRate` and `numChannels` parameters.
+A simple way for playing a RAW PCM file, is to add a `Wave` header in front of the data before playing it. To do that, the helper verb [pcmToWave()](/api/public_fs_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) is convenient. You can also call directely the [startPlayer()](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayer.html) verb. If you do that, do not forget to provide the `sampleRate` and `numChannels` parameters.
 
 {% include tip.html content="
-If you need to remove the header from a WAVE file, the helper verb [waveToPCM()](/api/public_flutter_sound_helper/FlutterSoundHelper/waveToPCM.html) is convenient.
+If you need to remove the header from a WAVE file, the helper verb [waveToPCM()](/api/public_fs_flutter_sound_helper/FlutterSoundHelper/waveToPCM.html) is convenient.
 "%}
 {% include tip.html content="
-If you need to add a header in front of a RAW file, the helper verb [pcmToWave()](/api/public_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) is convenient.
+If you need to add a header in front of a RAW file, the helper verb [pcmToWave()](/api/public_fs_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) is convenient.
 "%}
 
 ----------------------------
 
 ## Recording or playing Raw PCM files
 
-To record a RAW PCM16 file, you use the regular [startRecorder()](/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with [pcm16ToWave](/api/public_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) verb, or call the regular [startPlayer()](/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayer.html) or [startPlayerFromStream](/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayerFromStream.html) API verb. If you do the later, you must provide the `sampleRate` and `numChannels` parameter during the call. You can look to the examples provided with Flutter Sound.
+To record a RAW PCM16 file, you use the regular [startRecorder()](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) API verb. To play a Raw PCM16 file, you can either add a Wave header in front of the file with [pcm16ToWave](/api/public_fs_flutter_sound_helper/FlutterSoundHelper/pcmToWave.html) verb, or call the regular [startPlayer()](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayer.html) or [startPlayerFromStream](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayerFromStream.html) API verb. If you do the later, you must provide the `sampleRate` and `numChannels` parameter during the call. You can look to the examples provided with Flutter Sound.
 
 _Example_:
 

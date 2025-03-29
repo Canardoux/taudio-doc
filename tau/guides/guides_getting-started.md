@@ -22,9 +22,9 @@ To play back something you must instanciate a player. Most of the time, you will
 
 ### 2. Open and close your player
 
-Before calling `startPlayer()` you must [open the Player](/api/public_flutter_sound_player/FlutterSoundPlayer/openPlayer.html).
+Before calling `startPlayer()` you must [open the Player](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/openPlayer.html).
 
-When you have finished with it, **you must** [close it](/api/public_flutter_sound_player/FlutterSoundPlayer/closePlayer.html). A good places to put those verbs are in the procedures `initState()` and `dispose()`.
+When you have finished with it, **you must** [close it](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/closePlayer.html). A good places to put those verbs are in the procedures `initState()` and `dispose()`.
 
 ```dart
   FlutterSoundPlayer? _mPlayer = FlutterSoundPlayer();
@@ -57,7 +57,7 @@ When you have finished with it, **you must** [close it](/api/public_flutter_soun
 
 ### 3. Play your sound
 
-To play a sound you call [startPlayer()](/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayer.html). To stop a sound you call [stopPlayer()](/api/public_flutter_sound_player/FlutterSoundPlayer/stopPlayer.html)
+To play a sound you call [startPlayer()](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayer.html). To stop a sound you call [stopPlayer()](/api/public_fs_flutter_sound_player/FlutterSoundPlayer/stopPlayer.html)
 
 ```dart
 const _exampleAudioFilePathMP3 = 'https://tau.canardoux.xyz/live/extract/05.mp3';
@@ -97,9 +97,9 @@ To record something you must instanciate a recorder. Most of the time, you will 
 
 ### 2. Open and close your recorder
 
-Before calling `startRecorder()` you must [open](/api/public_flutter_sound_recorder/FlutterSoundRecorder/openRecorder.html) your recorder.
+Before calling `startRecorder()` you must [open](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/openRecorder.html) your recorder.
 
-When you have finished with it, **you must** [close](/api/public_flutter_sound_recorder/FlutterSoundRecorder/closeRecorder.html) it. A good place to put those verbs is in the procedures `initState()` and `dispose()`.
+When you have finished with it, **you must** [close](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/closeRecorder.html) it. A good place to put those verbs is in the procedures `initState()` and `dispose()`.
 
 ```dart
   @override
@@ -127,7 +127,7 @@ When you have finished with it, **you must** [close](/api/public_flutter_sound_r
 
 ### 3. Record something
 
-To record something you call [startRecorder()](/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html). To stop the recorder you call [stopRecorder()](/api/public_flutter_sound_recorder/FlutterSoundRecorder/stopRecorder.html)
+To record something you call [startRecorder()](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html). To stop the recorder you call [stopRecorder()](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/stopRecorder.html)
 
 ```dart
   Future<void> record() async {

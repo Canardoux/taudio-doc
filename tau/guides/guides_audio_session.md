@@ -20,7 +20,7 @@ federating the audio session management for all the App.
 [audio_session](https://pub.dev/packages/audio_session) for example is a very good example of such a plugin federating the audio session management.
 We are fan of this plugin which is developed by nice guys and girls. We encourage you to use it.
 
-The only case where flutter Sound modify the audio session is when the App does a [startRecorder()](/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html)
+The only case where flutter Sound modify the audio session is when the App does a [startRecorder()](/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html)
 on iOS with an [AVAudioSessionCategory](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct) incompatible with recording.
 We had many, many users forgetting to set a valid `AVAudioSessionCategory` and filling issues.
 So, if the `AVAudioSessionCategory` is inconsistent, Flutter Sound set itself the `AVAudioSessionCategory` to [AVAudioSessionCategoryPlayAndRecord](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord)

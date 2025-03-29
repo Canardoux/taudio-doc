@@ -20,15 +20,15 @@ Double check if your javascript source files are correct.
 
 ## Player
 
-* Flutter Sound can play buffers with [startPlayer(fromDataBuffer: )](/tau/fs/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Please refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
-* Flutter Sound can play remote URL with [startPlayer()](/tau/fs/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Again, refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
-* Playing from a Dart Stream with [startPlayerFromStream()](/tau/fs/api/public_flutter_sound_player/FlutterSoundPlayer/startPlayerFromStream.html) is now implemented.
+* Flutter Sound can play buffers with [startPlayer(fromDataBuffer: )](/tau/fs/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Please refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
+* Flutter Sound can play remote URL with [startPlayer()](/tau/fs/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayer.html), exactly like with other platforms. Again, refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers)
+* Playing from a Dart Stream with [startPlayerFromStream()](/tau/fs/api/public_fs_flutter_sound_player/FlutterSoundPlayer/startPlayerFromStream.html) is now implemented.
 
 The web App does not have access to any file system. But you can store a `Blob Object` URL into your local SessionStorage, and use the key as if it was an audio file. This is compatible with the Flutter Sound recorder.
 
 ## Recorder
 
-Flutter Sound on web cannot have access to any file system. You can use [startRecorder()](/tau/fs/api/public_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) like others platforms, but the recorded data will be stored inside an internal HTTP `Blob Object`. When the recorder is stopped, `startRecorder` stores the URL of this object into your local sessionStorage.
+Flutter Sound on web cannot have access to any file system. You can use [startRecorder()](/tau/fs/api/public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html) like others platforms, but the recorded data will be stored inside an internal HTTP `Blob Object`. When the recorder is stopped, `startRecorder` stores the URL of this object into your local sessionStorage.
 
 Please refer to [the codecs compatibility table](fs-guides_codec.html#on-web-browsers) : Flutter Sound Recorder does not work on Safari nor iOS.
 

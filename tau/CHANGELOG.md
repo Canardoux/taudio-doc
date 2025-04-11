@@ -4,6 +4,10 @@ summary: The Changelog of the Taudio Project.
 nav_order: 8
 toc: false
 ---
+### 10.3.0
+
+- Android : Play from Stream - feedxxx() uses an auxiliary thread so not to block the main thread. ([fs #1184](https://github.com/Canardoux/flutter_sound/issues/1184))
+
 ### 10.2.5
 
 - The FlutterSoundWeb was sending a 'stopCompleted' but the internal status was 'notStopped'. [fs #1179](https://github.com/Canardoux/flutter_sound/issues/1179)

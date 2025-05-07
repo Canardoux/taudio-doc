@@ -4,6 +4,10 @@ summary: The Changelog of the Taudio Project.
 nav_order: 8
 toc: false
 ---
+### 10.3.1
+
+- Android : Remove dummy code when recording PCM16WAV ( [fs #1187](https://github.com/Canardoux/flutter_sound/issues/1187) )
+
 ### 10.3.0
 
 - Android : Play from Stream - feedxxx() uses an auxiliary thread so not to block the main thread. ([fs #1184](https://github.com/Canardoux/flutter_sound/issues/1184))

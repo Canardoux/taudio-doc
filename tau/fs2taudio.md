@@ -37,6 +37,8 @@ dependencies:
   taudio: ^10.0.0
   ```
 
+Don't forget to remove andy dependency to flutter_sound 9.x!
+
 ## 3. Modify your Dart import statement
 
   ```dart

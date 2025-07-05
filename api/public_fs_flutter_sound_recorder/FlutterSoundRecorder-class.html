@@ -30,24 +30,21 @@ nav_order: 2
   <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../index.html">taudio</a></li>
-    <li><a href="../public_fs_flutter_sound_recorder">public&#47;fs&#47;flutter_sound_recorder.dart</a></li>
+    <li><a href="../public_fs_flutter_sound_recorder/">public&#47;fs&#47;flutter_sound_recorder.dart</a></li>
     <li class="self-crumb">FlutterSoundRecorder class</li>
   </ol>
   <div class="self-name">FlutterSoundRecorder</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-  <div class="toggle" id="theme-button" title="Toggle brightness">
-    <label for="theme">
-      <input type="checkbox" id="theme" value="light-theme">
-      <span id="dark-theme-button" class="material-symbols-outlined">
-        dark_mode
-      </span>
-      <span id="light-theme-button" class="material-symbols-outlined">
-        light_mode
-      </span>
-    </label>
-  </div>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
 </header>
 <main>
 <div
@@ -109,8 +106,8 @@ This verb will call <a href="../public_fs_flutter_sound_recorder/FlutterSoundRec
   <section class="summary offset-anchor" id="constructors">
     <h2>Constructors</h2>
     <dl class="constructor-summary-list">
-        <dt id="FlutterSoundRecorder" class="callable">
-          <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/FlutterSoundRecorder.html">FlutterSoundRecorder</a></span><span class="signature">({<span class="parameter" id="-param-logLevel"><span class="type-annotation"><a href="https://pub.dev/documentation/logger/2.5.0/logger/Level.html">Level</a></span> <span class="parameter-name">logLevel</span> = <span class="default-value">Level.debug</span></span>})</span>
+        <dt id="FlutterSoundRecorder.new" class="callable">
+          <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/FlutterSoundRecorder.html">FlutterSoundRecorder.new</a></span><span class="signature">({<span class="parameter" id="-param-logLevel"><span class="type-annotation"><a href="https://pub.dev/documentation/logger/2.5.0/logger/Level.html">Level</a></span> <span class="parameter-name">logLevel</span> = <span class="default-value">Level.debug</span></span>})</span>
         </dt>
         <dd>
           Instanciate a new Flutter Sound Recorder.
@@ -197,7 +194,7 @@ This verb will call <a href="../public_fs_flutter_sound_recorder/FlutterSoundRec
 
         <dt id="recorderState" class="property">
   <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/recorderState.html">recorderState</a></span>
-  <span class="signature">&#8594; <a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.2/flutter_sound_recorder_platform_interface/RecorderState.html">RecorderState</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.4/flutter_sound_recorder_platform_interface/RecorderState.html">RecorderState</a></span>
   
 
 </dt>
@@ -281,7 +278,7 @@ This verb will call <a href="../public_fs_flutter_sound_recorder/FlutterSoundRec
 </dd>
 
         <dt id="isEncoderSupported" class="callable">
-  <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/isEncoderSupported.html">isEncoderSupported</a></span><span class="signature">(<wbr><span class="parameter" id="isEncoderSupported-param-codec"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.2/flutter_sound_platform_interface/Codec.html">Codec</a></span> <span class="parameter-name">codec</span></span>)
+  <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/isEncoderSupported.html">isEncoderSupported</a></span><span class="signature">(<wbr><span class="parameter" id="isEncoderSupported-param-codec"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.4/flutter_sound_platform_interface/Codec.html">Codec</a></span> <span class="parameter-name">codec</span></span>)
     <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>&gt;</span></span>
   </span>
   
@@ -373,7 +370,7 @@ duration listeners.
 </dd>
 
         <dt id="startRecorder" class="callable">
-  <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html">startRecorder</a></span><span class="signature">(<wbr>{<span class="parameter" id="startRecorder-param-codec"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.2/flutter_sound_platform_interface/Codec.html">Codec</a></span> <span class="parameter-name">codec</span> = <span class="default-value">Codec.defaultCodec</span>, </span><span class="parameter" id="startRecorder-param-toFile"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">toFile</span>, </span><span class="parameter" id="startRecorder-param-toStreamFloat32"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Float32List-class.html">Float32List</a></span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">toStreamFloat32</span>, </span><span class="parameter" id="startRecorder-param-toStreamInt16"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Int16List-class.html">Int16List</a></span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">toStreamInt16</span>, </span><span class="parameter" id="startRecorder-param-toStream"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span>&gt;</span>?</span> <span class="parameter-name">toStream</span>, </span><span class="parameter" id="startRecorder-param-sampleRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">sampleRate</span>, </span><span class="parameter" id="startRecorder-param-numChannels"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">numChannels</span> = <span class="default-value">1</span>, </span><span class="parameter" id="startRecorder-param-bitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bitRate</span> = <span class="default-value">16000</span>, </span><span class="parameter" id="startRecorder-param-bufferSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bufferSize</span> = <span class="default-value">8192</span>, </span><span class="parameter" id="startRecorder-param-enableVoiceProcessing"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableVoiceProcessing</span> = <span class="default-value">false</span>, </span><span class="parameter" id="startRecorder-param-audioSource"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.2/flutter_sound_platform_interface/AudioSource.html">AudioSource</a></span> <span class="parameter-name">audioSource</span> = <span class="default-value">AudioSource.defaultSource</span>, </span><span class="parameter" id="startRecorder-param-enableNoiseSuppression"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableNoiseSuppression</span> = <span class="default-value">false</span>, </span><span class="parameter" id="startRecorder-param-enableEchoCancellation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableEchoCancellation</span> = <span class="default-value">true</span></span>})
+  <span class="name"><a href="../public_fs_flutter_sound_recorder/FlutterSoundRecorder/startRecorder.html">startRecorder</a></span><span class="signature">(<wbr>{<span class="parameter" id="startRecorder-param-codec"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.4/flutter_sound_platform_interface/Codec.html">Codec</a></span> <span class="parameter-name">codec</span> = <span class="default-value">Codec.defaultCodec</span>, </span><span class="parameter" id="startRecorder-param-toFile"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">toFile</span>, </span><span class="parameter" id="startRecorder-param-toStreamFloat32"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Float32List-class.html">Float32List</a></span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">toStreamFloat32</span>, </span><span class="parameter" id="startRecorder-param-toStreamInt16"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Int16List-class.html">Int16List</a></span>&gt;</span></span>&gt;</span>?</span> <span class="parameter-name">toStreamInt16</span>, </span><span class="parameter" id="startRecorder-param-toStream"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamSink-class.html">StreamSink</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-typed_data/Uint8List-class.html">Uint8List</a></span>&gt;</span>?</span> <span class="parameter-name">toStream</span>, </span><span class="parameter" id="startRecorder-param-sampleRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">sampleRate</span>, </span><span class="parameter" id="startRecorder-param-numChannels"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">numChannels</span> = <span class="default-value">1</span>, </span><span class="parameter" id="startRecorder-param-bitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bitRate</span> = <span class="default-value">16000</span>, </span><span class="parameter" id="startRecorder-param-bufferSize"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">bufferSize</span> = <span class="default-value">8192</span>, </span><span class="parameter" id="startRecorder-param-enableVoiceProcessing"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableVoiceProcessing</span> = <span class="default-value">false</span>, </span><span class="parameter" id="startRecorder-param-audioSource"><span class="type-annotation"><a href="https://pub.dev/documentation/flutter_sound_platform_interface/10.3.4/flutter_sound_platform_interface/AudioSource.html">AudioSource</a></span> <span class="parameter-name">audioSource</span> = <span class="default-value">AudioSource.defaultSource</span>, </span><span class="parameter" id="startRecorder-param-enableNoiseSuppression"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableNoiseSuppression</span> = <span class="default-value">false</span>, </span><span class="parameter" id="startRecorder-param-enableEchoCancellation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enableEchoCancellation</span> = <span class="default-value">true</span></span>})
     <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
   </span>
   
@@ -448,7 +445,7 @@ duration listeners.
 </header>
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../index.html">taudio</a></li>
-    <li><a href="../public_fs_flutter_sound_recorder">flutter_sound_recorder</a></li>
+    <li><a href="../public_fs_flutter_sound_recorder/">flutter_sound_recorder</a></li>
     <li class="self-crumb">FlutterSoundRecorder class</li>
 </ol>
 
@@ -461,7 +458,7 @@ duration listeners.
 <footer>
   <span class="no-break">
     taudio
-      10.3.2
+      10.3.4
   </span>
   
 </footer>
